@@ -1,0 +1,100 @@
+body{
+    padding-top:74px;
+    background: url(http://wallpoper.com/images/00/31/33/51/black-background_00313351.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative; 
+}
+#section1 {padding:80px 0;height:800px;color: #fff; background:transparent;}
+#section2 {padding:80px 0;height:auto;color:black; background: #ffffff;}
+#section3 {padding:80px 0;height:auto;color: rgb(8, 8, 8); background:#e9e8e8;}
+#section4 {padding:80px 0;height:auto;color:black; background:#ffffff;}
+#section5 {padding:80px 0;height:auto;color: #fff; background:transparent;}
+#section6 {padding:80px 0;height:auto;color:black; background:#eceeed;}
+
+.content{
+    /* height:800px; */
+    margin-top: 20px;
+}
+/* .container{
+    clear: both;
+    
+} */
+.contentDiv{
+   margin:12px 0; 
+}
+.nameContent{
+    padding-top: 200px;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.skillsGroup{
+    /* border: 0.5px solid rgb(148, 146, 146); */
+    margin:20px;
+    border-left:10px solid rgb(248, 163, 5);
+}
+
+.skill{
+    padding-left:10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.profileImage{
+    border:5px solid #ffffff;
+    transition: 1s ease-in;
+    transition: 1s ease-out;
+}
+
+.profileImage:hover{
+    border: 0.1px solid white;
+}
+
+/*======================================*/
+/* project  section */
+/*======================================*/
+.project{
+    position: relative;
+    display: inline-block;
+}
+.portfolio-description {
+   position: absolute;
+   transition: all 0.3s ease;
+   opacity: 1;
+   background: rgb(71, 70, 70);
+   top:0;
+   bottom:0;
+}
+
+/* .projectImage{
+    display: block;
+} */
+
+.projectTitle{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.project:hover .portfolio-description{
+    opacity: 1;
+    width: 100%;
+    z-index: 2;
+}
+
+input{
+    margin-bottom: 10px;
+}
