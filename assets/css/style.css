@@ -92,13 +92,14 @@ hr{
 .title{
     border-bottom: 0.5rem solid var(--main-theme-color); 
     padding-bottom: 0.2rem;
+    letter-spacing: 0.3rem;
 }
 
 .contentDiv{
    margin:13px 0;
 }
 .nameContent{
-    padding-top: 200px;
+    padding-top: 165px;
 }
 
 .container-fluid{
@@ -253,14 +254,7 @@ table .fa{
     color:#c9352f;
 }
 
-.nameContent .btn{
-    font-size: 3.5rem;
-    background: transparent;
-    color: #ffffff;
-    margin-top: 1rem;
-    transition: all 0.7s ease;
-    font-weight: bolder;
-}
+
 
 .nameContent .btn:hover{
     font-size: 3.6rem;
@@ -286,4 +280,55 @@ p{
 .sectionHeader{
     font-family: 'Fira Sans', sans-serif; 
 }
+
+.logo{
+    background: #EE6201;
+    padding: 0.5rem;
+    border-radius:50px; 
+    border: 1px solid #ffffff;
+    font-style: italic;
+}
+
+
+
+.name{
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-animation: mySpacing 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mySpacing 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mySpacing {
+    50% {letter-spacing: 6px;}
+}
+
+@keyframes mySpacing {
+    50% {letter-spacing: 6px;}
+}
+
+
+.nameContent .btn{
+    font-size: 3.5rem;
+    background: transparent;
+    color: #ffffff;
+    margin-top: 0.5rem;
+    transition: all 0.7s ease;
+    font-weight: bolder;
+    -webkit-animation: mymove 0.5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 0.5s infinite;
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {margin-top: 50px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {margin-top: 50px;}
+}
+
 
