@@ -1,5 +1,6 @@
 /* variable */
 :root {
+    font-size: 16px;
     /* theme color variable */
     /* --main-theme-color:#9F1881;  */
     /* --main-theme-color: #EE6201; 
@@ -44,6 +45,7 @@ body {
 
 .fixed-top{
     transition: all 0.7s ease;
+    padding-top: 3rem;
 }
 
 .nav-link{
@@ -85,10 +87,7 @@ hr{
     margin-top: 20px;
 }
 
-.name{
-    font-size: 3rem;
-    text-transform: uppercase;
-}
+
 .title{
     border-bottom: 0.5rem solid var(--main-theme-color); 
     padding-bottom: 0.2rem;
@@ -99,7 +98,7 @@ hr{
    margin:13px 0;
 }
 .nameContent{
-    padding-top: 165px;
+    padding-top: 140px;
 }
 
 .container-fluid{
@@ -119,6 +118,7 @@ hr{
     font-size: 20px;
     text-transform: uppercase;
 }
+
 
 .profileImage{
     transition: 1s ease-in;
