@@ -27,13 +27,13 @@ $('#submit').click(function (e) {
         $('#email').val('');
         $('#message').val('');
 
-    var contactMessage = {
-        senderName: name,
-        senderEmail: email,
-        SenderMessage: message,
-        timeStamp: time
-    };
-    database.ref().push(contactMessage);
+        var contactMessage = {
+            senderName: name,
+            senderEmail: email,
+            SenderMessage: message,
+            timeStamp: time
+        };
+        database.ref().push(contactMessage);
     } else {
         $('.feedbackMessage').removeClass('successMessage');
         $('.feedbackMessage').addClass('errorMessage');
