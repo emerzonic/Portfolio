@@ -323,7 +323,8 @@ input{
     background: #f8f9fad6
 }
 
-.modalbody .btn-primary{
+.modalbody .btn{
 background: var(--main-theme-color);
 border:none;
+color:#faf7f7;
 }
