@@ -18,19 +18,27 @@ $('#submit').click(function (e) {
     var email = $('#email').val();
     var message = $('#message').val();
     var time = moment().format('LLLL');
+    //validate none of the fields are empty
+    if (name.length > 0 && email.length > 0 && message.length > 0) {
+        $('.feedbackMessage').removeClass('errorMessage');
+        $('.feedbackMessage').addClass('successMessage');
+        $('.feedbackMessage').text('Thank you for your message. I will get back to you as soon as possible.');
+        $('#name').val('').focus();
+        $('#email').val('');
+        $('#message').val('');
 
-$('#name').val(' ').focus();
-$('#email').val(' ');
-$('#message').val(' ');
-
-var contactMessage = {
-    senderName: name,
-    senderEmail: email,
-    SenderMessage: message,
-    timeStamp: time
-};
-
-database.ref().push(contactMessage);
- }); 
+    var contactMessage = {
+        senderName: name,
+        senderEmail: email,
+        SenderMessage: message,
+        timeStamp: time
+    };
+    database.ref().push(contactMessage);
+    } else {
+        $('.feedbackMessage').removeClass('successMessage');
+        $('.feedbackMessage').addClass('errorMessage');
+        $('.feedbackMessage').text('Please make sure to provide all information in the form.');
+    }
+}); 
 
 
