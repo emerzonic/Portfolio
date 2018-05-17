@@ -28,11 +28,11 @@ body{
     font-family: 'Fira Sans', sans-serif; 
 }
 
-#section1 {padding:60px 0;height:812px;color: #fff; background:rgba(12, 12, 12, 0.568);}
-#section2 {padding:60px 0;height:auto;color:black; background: #e4e4e4;}
+#home {padding:60px 0;height:812px;color: #fff; background:rgba(12, 12, 12, 0.568);}
+#about{padding:60px 0;height:auto;color:black; background: #e4e4e4;}
 #section3 {padding:60px 0;height:auto;color: #ffffff; background:transparent;}
-#section4 {padding:60px 0;height:auto;color:black; background:#ffffff;}
-#section5 {padding:60px 0;height:auto;color:black; background:#eceeed;}
+#projects {padding:60px 0;height:auto;color:black; background:#ffffff;}
+#contact {padding:60px 0;height:auto;color:black; background:#eceeed;}
 
 /* ===================================== 
 /* navbar styles */
