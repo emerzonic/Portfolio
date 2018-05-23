@@ -23,3 +23,8 @@ $(window).scroll(function () {
     $('.fixed-top').css('padding-top','3rem'); 
    } 
 });
+
+
+$('#toggle').click(function(){
+  $('.navbar').toggleClass('bg-dark'); 
+});
