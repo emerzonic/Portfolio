@@ -17,14 +17,20 @@ $(window).scroll(function () {
    if ($(document).scrollTop() > 500) {
     $('.navbar').addClass('bg-dark'); 
     $('.fixed-top').css('padding-top','0.5rem'); 
-     
    } else {
-    $('.navbar').removeClass('bg-dark');
-    $('.fixed-top').css('padding-top','3rem'); 
+     if ($('#toggle').attr('aria-expanded') !== 'true') {
+      $('.navbar').removeClass('bg-dark');
+      $('.fixed-top').css('padding-top','3rem'); 
+     } 
    } 
 });
 
 
 $('#toggle').click(function(){
-  $('.navbar').toggleClass('bg-dark'); 
+  // alert($(this).attr('aria-expanded'));
+  if ($(this).attr('aria-expanded') === 'false') {
+    $('.navbar').addClass('bg-dark'); 
+  }else{
+    $('.navbar').removeClass('bg-dark'); 
+  }
 });
