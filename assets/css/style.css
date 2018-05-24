@@ -168,9 +168,15 @@ td{
     padding: 0.5rem;
 }
 
+
+table span{
+    font-size: 0.8rem;
+}
+
 table .fa{
     font-size: 2rem;
 }
+
 
 .contactType{
     text-transform: uppercase;
