@@ -1,5 +1,5 @@
 # Welcome to my Portfolio
-I built this site to showcase some of the projects have been working on and also provide some information regarding skills as a Full Stack Web Developer. 
+I built this site to showcase some of the projects have been working on and also provide some information regarding my skills as a Full Stack Web Developer. 
 
 ## Technologies Used
 * HTML5
