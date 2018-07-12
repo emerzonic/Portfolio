@@ -8,4 +8,4 @@ I built this site to showcase some of the projects have been working on and also
 * JQuery
 * Firebase
 
-### See site link [here](https://emerzonic.github.io/Portfolio/)
+### View site [here](https://emerzonic.github.io/Portfolio/)
