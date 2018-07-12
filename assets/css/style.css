@@ -3,9 +3,6 @@
 :root {
     font-size: 16px;
     --main-theme-color: #EE6201;  
-    /* --heading-font-family: 'Fira Sans', sans-serif; */
-    /* font-family: 'Roboto', sans-serif;
-/* font-family: 'Dosis', sans-serif; */
 }
 
 body{
@@ -100,6 +97,7 @@ body{
     border-bottom: 0.5rem solid var(--main-theme-color); 
     padding-bottom: 0.2rem;
     letter-spacing: 0.3rem;
+    font-family: 'Righteous', cursive;
 }
 
 .nameContent{
@@ -119,6 +117,7 @@ body{
     letter-spacing: 2px;
     -webkit-animation: mySpacing 5s infinite; /* Safari 4.0 - 8.0 */
     animation: mySpacing 5s infinite;
+    font-family: 'Righteous', cursive;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -175,6 +174,10 @@ table span{
     font-weight: bold;
 }
 
+table span a{
+    color:#2a1b71;
+}
+
 table .fa{
     font-size: 2rem;
 }
@@ -214,14 +217,14 @@ p{
 /* ==================================== */
 
 .skillsGroup{
-    margin:20px;
+    margin:10px;
     border-left:10px solid var(--main-theme-color);
 }
 
 .skill{
     padding-left:10px;
     font-size: 20px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 /*======================================*/
