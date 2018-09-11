@@ -2,7 +2,8 @@
 /* ==================================== */
 :root {
     font-size: 16px;
-    --main-theme-color: #EE6201;  
+    --main-theme-color: #05a4d4;  
+    /* --main-theme-color: #EE6201;   */
 }
 
 body{
@@ -74,7 +75,7 @@ body{
 }
 
 .logo{
-    background: #EE6201;
+    background: var(--main-theme-color);
     padding: 0.5rem;
     border-radius:50px; 
     border: 1px solid #ffffff;
