@@ -165,28 +165,15 @@ body{
     transform: scale(1.03);  
 }
 
-td{
-    padding: 0.5rem;
+.contact-div .fa{
+    font-size: 5.5rem;
+    margin: 1rem 0.5rem;
+    transition: 0.5s ease-in;
+    transition: 0.5s ease-out;
 }
 
-
-table span{
-    font-size: 0.8rem;
-    font-weight: bold;
-}
-
-table span a{
-    color:#2a1b71;
-}
-
-table .fa{
-    font-size: 2rem;
-}
-
-
-.contactType{
-    text-transform: uppercase;
-    font-weight: bold;
+.contact-div .fa:hover{
+    transform: scale(1.05);  
 }
 
 .fa-skype{
@@ -197,6 +184,9 @@ table .fa{
     color:#0c62a6;
 }
 
+.fa-github{
+    color:black;
+}
 
 .fa-envelope-o{
     color:#c9352f;
@@ -212,7 +202,6 @@ p{
     font-family: 'Roboto', sans-serif;
     background: #f1f0f0;
 }
-
 /* ==================================== */
 /* Skills - section 3 */
 /* ==================================== */
@@ -225,9 +214,7 @@ p{
 .skill{
     padding-left:10px;
     font-size: 20px;
-    /* text-transform: uppercase; */
 }
-
 /*======================================*/
 /* project  section 4*/
 /*======================================*/
@@ -300,6 +287,10 @@ p{
 /*======================================*/
 /* Contact  section 5*/
 /*======================================*/
+.contactItem{
+    max-width: 10rem;
+}
+
 input{
     margin-bottom: 10px;
 }
@@ -331,8 +322,6 @@ input{
     box-shadow: 0px 0px;
     top:6px;
 }
-
-
 
 .feedbackMessage{
     padding:1rem;
