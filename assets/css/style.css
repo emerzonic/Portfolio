@@ -166,10 +166,11 @@ body{
 }
 
 .contact-div .fa{
-    font-size: 5.5rem;
+    font-size: 3rem;
     margin: 1rem 0.5rem;
     transition: 0.5s ease-in;
     transition: 0.5s ease-out;
+    text-align: center;
 }
 
 .contact-div .fa:hover{
@@ -192,15 +193,15 @@ body{
     color:#c9352f;
 }
 
+
 p{
-    border-left:1.5rem solid var(--main-theme-color);
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     line-height: 1.6;
     color: #797676;
     font-size: 1.08rem;
-    margin: 1.5rem 0;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: #f1f0f0;
+    /* background: #f1f0f0; */
 }
 /* ==================================== */
 /* Skills - section 3 */
@@ -213,7 +214,8 @@ p{
 
 .skill{
     padding-left:10px;
-    font-size: 20px;
+    font-size:1rem;;
+    font-style: italic;
 }
 /*======================================*/
 /* project  section 4*/
@@ -288,7 +290,7 @@ p{
 /* Contact  section 5*/
 /*======================================*/
 .contactItem{
-    max-width: 10rem;
+    /* max-width: 1rem; */
 }
 
 input{
