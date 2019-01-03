@@ -291,10 +291,6 @@ p{
 /*======================================*/
 /* Contact  section 5*/
 /*======================================*/
-.contactItem{
-    /* max-width: 1rem; */
-}
-
 input{
     margin-bottom: 10px;
 }
@@ -315,6 +311,14 @@ input{
     box-shadow: #4e4e4d 0px 6px;
     position: relative;
     width:100%;
+    outline: none;
+    outline-style: none;
+}
+
+.btn.focus, .btn:focus {
+    outline: none;
+    box-shadow: #4e4e4d 0px 6px;
+    outline-style: none;
 }
 
 .btn-lg:hover{
