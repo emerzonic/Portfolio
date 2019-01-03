@@ -206,7 +206,15 @@ p{
 /* ==================================== */
 /* Skills - section 3 */
 /* ==================================== */
+.skill-heading {
+    background: var(--main-theme-color);
+    padding: .3rem;
+    text-align: center;
+    border-radius: 1rem;
+    font-style: italic;
+    font-weight:500;
 
+}
 .skillsGroup{
     margin:10px;
     border-left:10px solid var(--main-theme-color);
