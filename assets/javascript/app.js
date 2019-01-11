@@ -2,7 +2,6 @@ $(document).ready(function () {
 
   //dont add polygon if browser don't support it
   var agent = window.navigator.userAgent;
-  console.log(agent)
   if (agent.includes("Chrome") || agent.includes("Safari") || agent.includes("Firefox")) {
     $('#bg-home').addClass('polygon')
   }
