@@ -32,7 +32,7 @@ body{
 #projects {padding:60px 0;height:auto;color:black; background:#ffffff;}
 #contact {padding:60px 0;height:auto;color:black; background:#eceeed;}
 
-#bg-home{
+.polygon{
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 13%, 0 58%);
     clip-path: polygon(0 0, 100% 0, 100% 13%, 0 58%);
     height:24%;
@@ -44,7 +44,7 @@ body{
 }
 
 @media(max-width:750px){
-    #bg-home{
+    .polygon{
         height:17%;
     }
 }

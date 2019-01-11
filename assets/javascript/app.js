@@ -1,4 +1,12 @@
 $(document).ready(function() {
+ 
+  //dont add polygon if browser don't support it
+  var agent = window.navigator.userAgent;
+  if (agent.includes("Chrome")||agent.includes("Safari")||agent.includes("Firefox")) {
+    $('#bg-home').addClass('polygon')
+} 
+
+
 // Add scrollspy to <body>
 $('body').scrollspy({
   target: ".navbar",
