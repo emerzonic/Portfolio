@@ -33,6 +33,7 @@ body{
 #contact {padding:60px 0;height:auto;color:black; background:#eceeed;}
 
 #bg-home{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 13%, 0 58%);
     clip-path: polygon(0 0, 100% 0, 100% 13%, 0 58%);
     height:24%;
     width:100%;
