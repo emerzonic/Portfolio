@@ -32,6 +32,22 @@ body{
 #projects {padding:60px 0;height:auto;color:black; background:#ffffff;}
 #contact {padding:60px 0;height:auto;color:black; background:#eceeed;}
 
+#bg{
+    clip-path: polygon(0 0, 100% 0, 100% 13%, 0 58%);
+    height:24%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background: var(--main-theme-color); 
+}
+
+@media(max-width:500px){
+    #bg{
+        height:17%;
+    }
+}
+
 /* ===================================== 
 /* navbar styles */
 /* ===================================== */
@@ -95,7 +111,7 @@ body{
 /* Home - section 1 */
 /* ==================================== */
 .title{
-    border-bottom: 0.5rem solid var(--main-theme-color); 
+    border-bottom: 0.5rem solid #ffffff; 
     padding-bottom: 0.2rem;
     letter-spacing: 0.3rem;
     font-family: 'Righteous', cursive;

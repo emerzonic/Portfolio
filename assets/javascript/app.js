@@ -19,10 +19,12 @@ $(".nav-link").on('click', function (event) {
 $(window).scroll(function () {
   if ($(document).scrollTop() > 500) {
     $('.navbar').addClass('bg-dark');
+    $('#home-link-item').removeClass('d-none');
     $('.fixed-top').css('padding-top', '0.5rem');
   } else {
     if ($('#toggle').attr('aria-expanded') !== 'true') {
       $('.navbar').removeClass('bg-dark');
+       $('#home-link-item').addClass('d-none');
       $('.fixed-top').css('padding-top', '3rem');
     }
   }
