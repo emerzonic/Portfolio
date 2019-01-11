@@ -1,4 +1,4 @@
-
+$(document).ready(function() {
 // Add scrollspy to <body>
 $('body').scrollspy({
   target: ".navbar",
@@ -18,7 +18,6 @@ $(".nav-link").on('click', function (event) {
 
 //control the navbar background and padding
 $(window).scroll(function () {
-  console.log($(document).scrollTop())
   if ($(document).scrollTop() > 500) {
     $('.navbar').addClass('bg-dark');
     $('#home-link-item').removeClass('d-none');
@@ -56,7 +55,6 @@ $(window).scroll(function () {
 
 $(window).scroll(function () {
   if ($(document).scrollTop() > 1250) {
-    console.log($(document).scrollTop())
     $('.mySkills').removeClass('hide-element').addClass('show-element');;
   } else {
     $('.mySkills').addClass('hide-element').removeClass('show-element');
@@ -70,15 +68,36 @@ $(window).scroll(function () {
     $('.myProjects').addClass('hide-element').removeClass('show-element');
   }
 });
+
 $(window).scroll(function () {
   if ($(document).scrollTop() > 2909) {
+    console.log($(window).width())
     $('.myContact').removeClass('hide-element').addClass('show-element');;
   } else {
     $('.myContact').addClass('hide-element').removeClass('show-element');
   }
 });
 
+// var $window = $(window);
+// var $pane = $('#body');
 
+// function checkWidth() {
+//     var windowsize = $window.width();
+//     console.log(windowsize)
+
+//     if (windowsize > 440) {
+//         //if the window is greater than 440px wide then turn on jScrollPane..
+//         $pane.jScrollPane({
+//            scrollbarWidth:15, 
+//            scrollbarMargin:52
+//         });
+//     }
+// }
+
+// // Execute on load
+// checkWidth();
+// // Bind event listener
+// $(window).resize(checkWidth);
 
 //control the navbar background on mobile devices
 $('#toggle').click(function () {
@@ -88,3 +107,6 @@ $('#toggle').click(function () {
     $('.navbar').removeClass('bg-dark');
   }
 });
+
+
+})

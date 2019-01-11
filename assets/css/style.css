@@ -96,8 +96,10 @@ body{
     background: var(--main-theme-color);
     padding: 0.5rem;
     border-radius:50px; 
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
     font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
 }
 
 #section4{
