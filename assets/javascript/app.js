@@ -6,6 +6,10 @@ $(document).ready(function() {
     $('#bg-home').addClass('polygon')
 } 
 
+if (agent.includes("IE")) {
+  console.log('IE')
+} 
+
 
 // Add scrollspy to <body>
 $('body').scrollspy({
