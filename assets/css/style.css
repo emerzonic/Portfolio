@@ -183,6 +183,22 @@ body{
     transform: scale(1.03);  
 }
 
+.aboutMe, .mySkills, .myProjects, .myContact, .contact-div{
+    transition:0.3s linear;
+    overflow: hidden;
+    height:4rem;
+}
+
+.hide-element{
+    width:0;
+    opacity:0;
+}
+
+.show-element{
+	width: 100%;
+	opacity:1;
+}
+
 .contact-div .fa{
     font-size: 3rem;
     margin: 1rem 0.5rem;
@@ -310,7 +326,7 @@ p{
     transform: scale(1.1);  
 }
 
-.projectsHeader{
+.projects-header{
     margin-bottom: 100px;
 }
 

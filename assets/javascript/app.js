@@ -1,3 +1,4 @@
+
 // Add scrollspy to <body>
 $('body').scrollspy({
   target: ".navbar",
@@ -17,6 +18,7 @@ $(".nav-link").on('click', function (event) {
 
 //control the navbar background and padding
 $(window).scroll(function () {
+  console.log($(document).scrollTop())
   if ($(document).scrollTop() > 500) {
     $('.navbar').addClass('bg-dark');
     $('#home-link-item').removeClass('d-none');
@@ -29,6 +31,54 @@ $(window).scroll(function () {
     }
   }
 });
+
+
+//control the social icons animations
+$(window).scroll(function () {
+  if ($(document).scrollTop() > 730) {
+    $('.contact-div').removeClass('hide-element');
+    $('.contact-div').addClass('show-element');
+  } else {
+    $('.contact-div').addClass('hide-element');
+    $('.contact-div').removeClass('show-element');  }
+});
+
+
+//control the social icons animations
+$(window).scroll(function () {
+  if ($(document).scrollTop() > 360) {
+    $('.aboutMe').removeClass('hide-element').addClass('show-element');;
+  } else {
+    $('.aboutMe').addClass('hide-element').removeClass('show-element');
+  }
+});
+
+
+$(window).scroll(function () {
+  if ($(document).scrollTop() > 1250) {
+    console.log($(document).scrollTop())
+    $('.mySkills').removeClass('hide-element').addClass('show-element');;
+  } else {
+    $('.mySkills').addClass('hide-element').removeClass('show-element');
+  }
+});
+
+$(window).scroll(function () {
+  if ($(document).scrollTop() > 1575) {
+    $('.myProjects').removeClass('hide-element').addClass('show-element');;
+  } else {
+    $('.myProjects').addClass('hide-element').removeClass('show-element');
+  }
+});
+$(window).scroll(function () {
+  if ($(document).scrollTop() > 2909) {
+    $('.myContact').removeClass('hide-element').addClass('show-element');;
+  } else {
+    $('.myContact').addClass('hide-element').removeClass('show-element');
+  }
+});
+
+
 
 //control the navbar background on mobile devices
 $('#toggle').click(function () {
