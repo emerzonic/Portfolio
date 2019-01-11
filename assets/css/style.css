@@ -43,7 +43,7 @@ body{
     background: var(--main-theme-color); 
 }
 
-@media(max-width:500px){
+@media(max-width:750px){
     #bg-home{
         height:17%;
     }
