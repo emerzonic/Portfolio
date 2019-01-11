@@ -6,8 +6,12 @@
     /* --main-theme-color: #EE6201;   */
 }
 
+/* Internet explorer styles */
 .IE-background{
     background-color: #05a4d4; 
+}
+.IE-border-left{
+    border-left:10px solid #05a4d4; 
 }
 
 body{
