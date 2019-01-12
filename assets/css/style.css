@@ -314,7 +314,7 @@ p{
 }
 
 .projectName a:hover{
-    color:var(--main-theme-color #05a4d4);
+    color:var(--main-theme-color, #05a4d4);
     transition: all 0.7s ease;
 }
 
@@ -322,7 +322,7 @@ p{
     font-size: 1.5rem;
     text-align: center;
     margin:0.5rem;
-    background:var(--main-theme-color #05a4d4);
+    background:var(--main-theme-color, #05a4d4);
     border-radius: 100%;
     padding: 0.5rem;
     z-index: 2;;
