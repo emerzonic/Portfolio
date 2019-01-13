@@ -17,6 +17,9 @@ $(document).ready(function () {
     target: ".navbar",
     offset: 74
   });
+
+
+  //controls the page scroll when the nav link is clicked
   $(".nav-link").on('click', function (event) {
     if (this.hash !== "") {
       event.preventDefault();
