@@ -47,12 +47,14 @@ $(document).ready(function () {
 
   //Select and  animate
   $(window).scroll(function () {
+    //select the elements to animate
     var aboutTitle = $('.aboutMe'),
       socialTitle  = $('.social-div'),
       skillTitle   = $('.mySkills'),
       projectTitle = $('.myProjects'),
       contactTitle = $('.myContact'),
 
+      //get the scroll position to animate
       aboutPosition   = 360,
       socialPosition  = 730,
       skillPosition   = 1250,
