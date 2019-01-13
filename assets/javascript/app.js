@@ -6,7 +6,7 @@ $(document).ready(function () {
     $('#bg-home').addClass('polygon')
   }
 
-  if (agent.includes("MSIE")||agent.includes('Edge')) {
+  if (agent.includes("MSIE") || agent.includes('Edge')) {
     $('.logo, .skill-heading').addClass('IE-background')
     $('.skillsGroup').addClass('IE-border-left')
   }
@@ -47,17 +47,17 @@ $(document).ready(function () {
 
   //Select and  animate
   $(window).scroll(function () {
-    var aboutTitle =  $('.aboutMe'),
-        socialTitle =  $('.social-div'),
-        skillTitle = $('.mySkills'),
-        projectTitle = $('.myProjects'),
-        contactTitle = $('.myContact'),
+    var aboutTitle = $('.aboutMe'),
+      socialTitle = $('.social-div'),
+      skillTitle = $('.mySkills'),
+      projectTitle = $('.myProjects'),
+      contactTitle = $('.myContact'),
 
-        aboutPosition = 360,
-        socialPosition = 730,
-        skillPosition = 1250,
-        projectPosition = 1575,
-        contactPosition = 2909;
+      aboutPosition = 360,
+      socialPosition = 730,
+      skillPosition = 1250,
+      projectPosition = 1575,
+      contactPosition = 2909;
 
     animate(aboutTitle, aboutPosition);
     animate(socialTitle, socialPosition);
@@ -70,9 +70,11 @@ $(document).ready(function () {
   //controls animation base on page scroll position
   function animate(element, pagePosition) {
     if ($(document).scrollTop() > pagePosition) {
-      element.removeClass('hide-element').addClass('show-element');;
+      element.removeClass('hide-element')
+        .addClass('show-element');;
     } else {
-      element.addClass('hide-element').removeClass('show-element');
+      element.addClass('hide-element')
+        .removeClass('show-element');
     }
   }
 
