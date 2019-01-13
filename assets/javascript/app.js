@@ -48,14 +48,14 @@ $(document).ready(function () {
   //Select and  animate
   $(window).scroll(function () {
     var aboutTitle = $('.aboutMe'),
-      socialTitle = $('.social-div'),
-      skillTitle = $('.mySkills'),
+      socialTitle  = $('.social-div'),
+      skillTitle   = $('.mySkills'),
       projectTitle = $('.myProjects'),
       contactTitle = $('.myContact'),
 
-      aboutPosition = 360,
-      socialPosition = 730,
-      skillPosition = 1250,
+      aboutPosition   = 360,
+      socialPosition  = 730,
+      skillPosition   = 1250,
       projectPosition = 1575,
       contactPosition = 2909;
 
