@@ -54,6 +54,7 @@ $(document).ready(function () {
     var aboutTitle = $('.aboutMe'),
       socialTitle  = $('.social-div'),
       skillTitle   = $('.mySkills'),
+      skillsContent   = $('.skills-content'),
       projectTitle = $('.myProjects'),
       contactTitle = $('.myContact'),
 
@@ -61,12 +62,14 @@ $(document).ready(function () {
       aboutPosition   = 360,
       socialPosition  = 730,
       skillPosition   = 1250,
+      skillContPosition   = 1255,
       projectPosition = 1575,
       contactPosition = 2909;
 
     animate(aboutTitle, aboutPosition);
     animate(socialTitle, socialPosition);
     animate(skillTitle, skillPosition);
+    animate(skillsContent, skillContPosition);
     animate(projectTitle, projectPosition);
     animate(contactTitle, contactPosition);
   });

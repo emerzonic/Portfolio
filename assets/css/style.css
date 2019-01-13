@@ -199,6 +199,13 @@ body{
     height:4rem;
 }
 
+.skills-content{
+    transition:0.3s linear;
+    overflow: hidden;
+    height: 15rem;
+}
+
+
 .hide-element{
     width:0;
     opacity:0;
@@ -411,3 +418,5 @@ background: var(--main-theme-color, #05a4d4);
 border:none;
 color:#faf7f7;
 }
+
+
