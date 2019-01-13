@@ -193,7 +193,7 @@ body{
     transform: scale(1.03);  
 }
 
-.aboutMe, .mySkills, .myProjects, .myContact, .contact-div{
+.aboutMe, .mySkills, .myProjects, .myContact, .social-div{
     transition:0.3s linear;
     overflow: hidden;
     height:4rem;
@@ -209,7 +209,7 @@ body{
 	opacity:1;
 }
 
-.contact-div .fa{
+.social-div .fa{
     font-size: 3rem;
     margin: 1rem 0.5rem;
     transition: 0.5s ease-in;
@@ -217,7 +217,7 @@ body{
     text-align: center;
 }
 
-.contact-div .fa:hover{
+.social-div .fa:hover{
     transform: scale(1.05);  
 }
 

@@ -12,7 +12,7 @@ $(document).ready(function () {
   }
 
 
-  // Add scrollspy to <body>
+  // Add scrollspy to page body
   $('body').scrollspy({
     target: ".navbar",
     offset: 74
@@ -45,53 +45,36 @@ $(document).ready(function () {
   });
 
 
-  //control the social icons animations
+  //Select and  animate
   $(window).scroll(function () {
-    if ($(document).scrollTop() > 730) {
-      $('.contact-div').removeClass('hide-element');
-      $('.contact-div').addClass('show-element');
-    } else {
-      $('.contact-div').addClass('hide-element');
-      $('.contact-div').removeClass('show-element');
-    }
+    var aboutTitle =  $('.aboutMe'),
+        socialTitle =  $('.social-div'),
+        skillTitle = $('.mySkills'),
+        projectTitle = $('.myProjects'),
+        contactTitle = $('.myContact'),
+
+        aboutPosition = 360,
+        socialPosition = 730,
+        skillPosition = 1250,
+        projectPosition = 1575,
+        contactPosition = 2909;
+
+    animate(aboutTitle, aboutPosition);
+    animate(socialTitle, socialPosition);
+    animate(skillTitle, skillPosition);
+    animate(projectTitle, projectPosition);
+    animate(contactTitle, contactPosition);
   });
 
 
-  //control the social icons animations
-  $(window).scroll(function () {
-    if ($(document).scrollTop() > 360) {
-      $('.aboutMe').removeClass('hide-element').addClass('show-element');;
+  //controls animation base on page scroll position
+  function animate(element, pagePosition) {
+    if ($(document).scrollTop() > pagePosition) {
+      element.removeClass('hide-element').addClass('show-element');;
     } else {
-      $('.aboutMe').addClass('hide-element').removeClass('show-element');
+      element.addClass('hide-element').removeClass('show-element');
     }
-  });
-
-
-  $(window).scroll(function () {
-    if ($(document).scrollTop() > 1250) {
-      $('.mySkills').removeClass('hide-element').addClass('show-element');;
-    } else {
-      $('.mySkills').addClass('hide-element').removeClass('show-element');
-    }
-  });
-
-  $(window).scroll(function () {
-    if ($(document).scrollTop() > 1575) {
-      $('.myProjects').removeClass('hide-element').addClass('show-element');;
-    } else {
-      $('.myProjects').addClass('hide-element').removeClass('show-element');
-    }
-  });
-
-  $(window).scroll(function () {
-    if ($(document).scrollTop() > 2909) {
-      console.log($(window).width())
-      $('.myContact').removeClass('hide-element').addClass('show-element');;
-    } else {
-      $('.myContact').addClass('hide-element').removeClass('show-element');
-    }
-  });
-
+  }
 
   //control the navbar background on mobile devices
   $('#toggle').click(function () {
