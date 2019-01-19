@@ -8,7 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Fira+Sans|Roboto|Righteous" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" type="image/png" href="/assets/images/flavicon.png" />
@@ -56,7 +57,7 @@
         <section id="home">
             <div class="container content">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-12">
                         <div class="nameContent text-center">
                             <h1 class="name">Hi, I'm Emerson Doyah</h1>
                             <h2 class="title">Full Stack Web Developer</h2>
@@ -71,7 +72,7 @@
         <section id="about" class="pt-3">
             <div class="container content">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-12">
                         <div class="aboutMe">
                             <h1 class="sectionHeader about-header text text-center">About Me</h1>
                         </div>
@@ -86,17 +87,22 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="social-div text-center">
-                                <a class="contact-link" href="tel:1-763-439-5721"><i class="fa fa-phone-square contactItem"
-                                        aria-hidden="true"></i></a>
-                                <a class="contact-link" href="mailto:emerson.doyah@gmail.com"><i class="fa fa-envelope-o contactItem"
-                                        aria-hidden="true"></i></a>
-                                <a class="contact-link" href="skype:profile_name?userinfo"><i class="fa fa-skype contactItem"
-                                        aria-hidden="true"></i></a>
-                                <a class="contact-link" href="https://github.com/emerzonic"><i class="fa fa-github contactItem"
-                                        aria-hidden="true"></i></a>
-                                <a class="contact-link" href="https://www.linkedin.com/in/emerson-doyah-0ba6b180/"><i
-                                        class="fa fa-linkedin-square contactItem" aria-hidden="true"></i></a>
+                            <div class="social-div text-center hide-element">
+                                <a class="contact-link" href="tel:1-763-439-5721">
+                                    <i class="fas fa-phone-square"></i>
+                                </a>
+                                <a class="contact-link" href="mailto:emerson.doyah@gmail.com">
+                                    <i class="far fa-envelope contactItem"></i>
+                                </a>
+                                <a class="contact-link" href="skype:profile_name?userinfo">
+                                    <i class="fab fa-skype contactItem"></i>
+                                </a>
+                                <a class="contact-link" href="https://github.com/emerzonic">
+                                    <i class="fab fa-github-square contactItem"></i>
+                                </a>
+                                <a class="contact-link" href="https://www.linkedin.com/in/emerson-doyah-0ba6b180/">
+                                    <i class="fab fa-linkedin contactItem"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -151,7 +157,7 @@
         <section id="section3" class="pt-3">
             <div class="container content">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-12">
                         <div class="mySkills">
                             <h1 class="sectionHeader skills-header  text text-center">Skills</h1>
                         </div>
@@ -228,289 +234,356 @@
     <section id="projects" class="pt-3">
         <div class="container content pt-2">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-12">
                     <div class="myProjects">
                         <h1 class="sectionHeader projects-header text text-center mb-1">Projects</h1>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="project">
-                        <div class="item-thumbnail">
-                            <img class="projectImage img-fluid" src="assets/images/alimentum.png" alt="">
+            <div class="row project-items border-1">
+                <div class="project-div">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h4 class="card-title project-title">Alimentum <i class="far fa-hand-point-right"></i></h4>
+                                <h5 class="card-text project-description">Full Stack RESTful API application</h5>
+                                <p class="card-text project-text"> Alimentum is a recipe finder website. Users can find
+                                    recipes by various general categories. The app also allows for seaching by a
+                                    particular ingredient. Example chicken,
+                                    pista, etc. Users can save recipes to their favorites and access them anytime.
+                                </p>
+                                <p class="project-tech"><strong>Technologies:</strong> Java, JavaScript, Spring Boot,
+                                    React, Redux, Bootstrap, Spring Security, Hibernate, Java Persistence API (JPA), JWT Token, MySQL
+                                </p>
+                            </div>
                         </div>
-                        <div class="portfolio-description">
-                            <div class="projectTitle">
-                                <h4 class="projectName">
-                                    <a href="assets/images/alimentum.png">Alimentum</a>
-                                </h4>
-                                <a href="https://github.com/emerzonic/Alimentum_Spring-Boot-Rest_Service" class="portfolio-gallery-set">
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://alimentum-recipe-finder.herokuapp.com/">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card image-card bg-dark text-center">
+                            <img src="assets/images/alimentum.png" class="card-img project-image" alt="project image">
+                            <div class="card-img-overlay">
+                                <a target="_blank" rel="noopener noreferrer" href="https://alimentum-recipe-finder.herokuapp.com/"
+                                    class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/emerzonic/Alimentum_Spring-Boot-Rest_Service"
+                                    class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="project">
-                        <div class="item-thumbnail">
-                            <img class="projectImage img-fluid" src="assets/images/discussion.png" alt="">
+                <div class="project-div">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h4 class="card-title project-title"><i class="far fa-hand-point-left"></i> The Discussion Board</h4>
+                                <h5 class="card-text project-description">Full Stack CRUD Application</h5>
+                                <p class="card-text project-text">The Discussion Board is
+                                    an online community where users can share blog posts and entertain discussions in
+                                    the form of comments,
+                                    replies and likes.
+                                </p>
+                                <p class="project-tech"><strong>Technologies:</strong> Java, Spring Boot, Spring MVC -
+                                    Inversion of Control (Dependency Injection),
+                                    Spring Security, Java Persistence API (JPA), Hibernate, MySQL, JQuery, Json,
+                                    Thymeleaf, Bootstrap 4, Flexbox, MySQL
+                                </p>
+                            </div>
                         </div>
-                        <div class="portfolio-description">
-                            <div class="projectTitle">
-                                <h4 class="projectName">
-                                    <a href="assets/images/discussion.png">The Discussion Board</a>
-                                </h4>
-                                <a href="https://github.com/emerzonic/Disputatio-the-Tech-Forum" class="portfolio-gallery-set">
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://thediscussionboard.herokuapp.com/">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card image-card bg-dark text-center">
+                            <img src="assets/images/discussion.png" class="card-img project-image" alt="project image">
+                            <div class="card-img-overlay">
+                                <a target="_blank" rel="noopener noreferrer" href="https://thediscussionboard.herokuapp.com/"
+                                    class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/emerzonic/Disputatio-the-Tech-Forum"
+                                    class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="project">
-                        <div class="item-thumbnail">
-                            <img class="projectImage img-fluid" src="assets/images/light.png" alt="">
+                <div class="project-div">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h4 class="card-title project-title">Lighthouse <i class="far fa-hand-point-right"></i></h4>
+                                <h5 class="card-text project-description">
+                                    Full Stack CRUD Application
+                                </h5>
+                                <p class="card-text project-text">LightHouse is a social and informative
+                                    platform for people suffering from mental health.
+                                    I am working on full stack features with a group of five developers.
+                                </p>
+                                <p class="project-tech"><strong>Technologies:</strong> JavaScript, Node js,
+                                    HTML5, CSS3, Bootstrap 4, React, Express server, Better Doctor API, Mongoose ODM,
+                                    MongoDB
+                                </p>
+                            </div>
                         </div>
-                        <div class="portfolio-description">
-                            <div class="projectTitle">
-                                <h4 class="projectName">
-                                    <a href="assets/images/light.png">LightHouse</a>
-                                </h4>
-                                <a href="https://github.com/nikolas-haug/Lighthouse" class="portfolio-gallery-set">
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://dry-lake-56367.herokuapp.com/">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card image-card bg-dark text-center">
+                            <img src="assets/images/light.png" class="card-img project-image" alt="project image">
+                            <div class="card-img-overlay">
+                                <a target="_blank" rel="noopener noreferrer" href="https://dry-lake-56367.herokuapp.com/"
+                                    class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/nikolas-haug/Lighthouse"
+                                    class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="project">
-                        <div class="item-thumbnail">
-                            <img class="projectImage img-fluid" src="assets/images/react.png" alt="">
+                <div class="project-div">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h4 class="card-title project-title"><i class="far fa-hand-point-left"></i> React
+                                    Memory Game</h4>
+                                <h5 class="card-text project-description">Single Page Game Application</h5>
+                                <p class="card-text project-text">This memory game tests your ability to track
+                                    or remember similiar images. Player has to click all twelve crystals without 
+                                    clicking any more than once.
+                                </p>
+                                <p class="project-tech"><strong>Technologies:</strong> JavaScript, React, CSS3,
+                                    Sementic UI
+                                </p>
+                            </div>
                         </div>
-                        <div class="portfolio-description">
-                            <div class="projectTitle">
-                                <h4 class="projectName">
-                                    <a href="assets/images/react.png">React Memory Game</a>
-                                </h4>
-                                <a href="https://github.com/emerzonic/React-Memory-Game" class="portfolio-gallery-set">
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://emerzonic.github.io/React-Memory-Game/">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card image-card bg-dark text-center">
+                            <img src="assets/images/react.png" class="card-img project-image" alt="project image">
+                            <div class="card-img-overlay">
+                                <a target="_blank" rel="noopener noreferrer" href="https://emerzonic.github.io/React-Memory-Game/"
+                                    class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/emerzonic/React-Memory-Game"
+                                    class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="project">
-                        <div class="item-thumbnail">
-                            <img class="projectImage img-fluid" src="assets/images/news.png" alt="">
+                <div class="project-div">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h4 class="card-title project-title"> Newsopedia <i class="far fa-hand-point-right"></i></h4>
+                                <h5 class="card-text project-description">Full Stack CRUD Application</h5>
+                                <p class="card-text project-text">Newsopedia is a an online news generator application.
+                                    Users can seacrh articles based on key terms. The app takes the user input from
+                                    client
+                                    side and route request to the back-end express server that makes an external API
+                                    request
+                                    to the New York Time API using NPM's Request package.
+                                </p>
+                                <p class="project-tech"><strong>Technologies:</strong> JavaScript, Node js,
+                                    CSS3, Sementic UI, React, Express server, New York Time API, Mongoose ODM, MongoDB
+                                </p>
+                            </div>
                         </div>
-                        <div class="portfolio-description">
-                            <div class="projectTitle">
-                                <h4 class="projectName">
-                                    <a href="assets/images/news.png">Newsopedia</a>
-                                </h4>
-                                <a href="https://github.com/emerzonic/React-Web-Scraper" class="portfolio-gallery-set">
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://express-react-js-app.herokuapp.com/">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card image-card bg-dark text-center">
+                            <img src="assets/images/news.png" class="card-img project-image" alt="project image">
+                            <div class="card-img-overlay">
+                                <a target="_blank" rel="noopener noreferrer" href="https://express-react-js-app.herokuapp.com/"
+                                    class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/emerzonic/React-Web-Scraper"
+                                    class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="project">
-                        <div class="item-thumbnail">
-                            <img class="projectImage img-fluid" src="assets/images/via.png" alt="">
+                <div class="project-div">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h4 class="card-title project-title"><i class="far fa-hand-point-left"></i> Voluteers In Action</h4>
+                                <h5 class="card-text project-description">Full Stack CRUD Application</h5>
+                                <p class="card-text project-text">Volunteers In Action VIA is a project meant for
+                                    teenagers in high school to create and find volunteer projects within their neighborhoods.
+                                    These volunteer activities complete requirements for community service in order to graduate high
+                                    school.The ultimate goal of this project is implement activites and share them with fellow students.
+                                </p>
+                                <p class="project-tech"><strong>Technologies:</strong> JavaScript, Node js,
+                                    CSS3, Sementic UI, Express server, Google Map API, MySQL
+                                </p>
+                            </div>
                         </div>
-                        <div class="portfolio-description">
-                            <div class="projectTitle">
-                                <h4 class="projectName">
-                                    <a href="assets/images/via.png">Voluteers In Action</a>
-                                </h4>
-                                <a href="https://github.com/emerzonic/Volunteers-In-Action" class="portfolio-gallery-set">
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://secure-garden-12181.herokuapp.com/index">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card image-card bg-dark text-center">
+                            <img src="assets/images/via.png" class="card-img project-image" alt="project image">
+                            <div class="card-img-overlay">
+                                <a target="_blank" rel="noopener noreferrer" href="https://secure-garden-12181.herokuapp.com/index"
+                                    class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/emerzonic/Volunteers-In-Action"
+                                    class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="project">
-                        <div class="item-thumbnail">
-                            <img class="projectImage img-fluid" src="assets/images/scrape.png" alt="">
+                <div class="project-div">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h4 class="card-title project-title"></i> Tech News Web Scraper <i class="far fa-hand-point-right"></i></h4>
+                                <h5 class="card-text project-description">Full Stack CRUD Application</h5>
+                                <p class="card-text project-text">Volunteers In Action VIA is a project meant for
+                                    teenagers
+                                    in high school to create and find volunteer projects within their neighborhoods.
+                                    These volunteer
+                                    activities complete requirements for community service in order to graduate high
+                                    school.The ultimate
+                                    goal of this project is implement activites and share them with fellow students.
+                                    Along with two other developers,
+                                    I work on the back-end business logic.
+                                </p>
+                                <p class="project-tech"><strong>Technologies:</strong> JavaScript, Node js,
+                                    CSS3, Sementic UI, Express server, Google Map API, Mongoose ODM, MongoDB
+                                </p>
+                            </div>
                         </div>
-                        <div class="portfolio-description">
-                            <div class="projectTitle">
-                                <h4 class="projectName">
-                                    <a href="assets/images/scrape.png">Tech News Web Scraper</a>
-                                </h4>
-                                <a href="https://github.com/emerzonic/Web-Scraper" class="portfolio-gallery-set">
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://dry-plains-35717.herokuapp.com/home">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card image-card bg-dark text-center">
+                            <img src="assets/images/scrape.png" class="card-img project-image" alt="project image">
+                            <div class="card-img-overlay">
+                                <a target="_blank" rel="noopener noreferrer" href="https://dry-plains-35717.herokuapp.com/home"
+                                    class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/emerzonic/Web-Scraper"
+                                    class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="project">
-                        <div class="item-thumbnail">
-                            <img class="projectImage img-fluid" src="assets/images/todo.png" alt="">
+                <div class="project-div">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h4 class="card-title project-title"><i class="far fa-hand-point-left"></i> Todos
+                                    Manager</h4>
+                                <h5 class="card-text project-description">Single Page CRUD Application</h5>
+                                <p class="card-text project-text">Todos Manager is a todo tasks management app.
+                                </p>
+                                <p class="project-tech"><strong>Technologies:</strong> JavaScript,React, Node js,
+                                    CSS3, Sementic UI, Express server, Mongoose ODM, MongoDB
+                                </p>
+                            </div>
                         </div>
-                        <div class="portfolio-description">
-                            <div class="projectTitle">
-                                <h4 class="projectName">
-                                    <a href="assets/images/todo.png">Todo List App</a>
-                                </h4>
-                                <a href="https://github.com/emerzonic/react-to-do-list-app" class="portfolio-gallery-set">
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://react-js-todolist.herokuapp.com">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card image-card bg-dark text-center">
+                            <img src="assets/images/todo.png" class="card-img project-image" alt="project image">
+                            <div class="card-img-overlay">
+                                <a target="_blank" rel="noopener noreferrer" href="https://react-js-todolist.herokuapp.com"
+                                    class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/emerzonic/react-to-do-list-app"
+                                    class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="project">
-                        <div class="item-thumbnail">
-                            <img class="projectImage img-fluid" src="assets/images/friendfinder.png" alt="">
+                <div class="project-div">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h4 class="card-title project-title"> MN Trivia <i class="far fa-hand-point-right"></i></h4>
+                                <h5 class="card-text project-description">Single Page Game Application</h5>
+                                <p class="card-text project-text">MN Trivia is an application that will test your
+                                    knowledge of the state of Minnesota with fifteen (15) multiple choice questions.
+                                </p>
+                                <p class="project-tech"><strong>Technologies:</strong> JavaScript, JQuery,
+                                    CSS3, Bootstrap 4,
+                                </p>
+                            </div>
                         </div>
-                        <div class="portfolio-description">
-                            <div class="projectTitle">
-                                <h4 class="projectName">
-                                    <a href="assets/images/alimentum.png">FriendFinder</a>
-                                </h4>
-                                <a href="https://github.com/emerzonic/FriendFinder" class="portfolio-gallery-set">
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://thawing-coast-29140.herokuapp.com/">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card image-card bg-dark text-center">
+                            <img src="assets/images/trivia.png" class="card-img project-image" alt="project image">
+                            <div class="card-img-overlay">
+                                <a target="_blank" rel="noopener noreferrer" href="https://emerzonic.github.io/TriviaGame/"
+                                    class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/emerzonic/TriviaGame"
+                                    class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="project">
-                        <div class="item-thumbnail">
-                            <img class="projectImage img-fluid" src="assets/images/trivia.png" alt="">
+                <div class="project-div">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h4 class="card-title project-title"><i class="far fa-hand-point-left"></i> GifTastic</h4>
+                                <h5 class="card-text project-description">Single Page Application</h5>
+                                <p class="card-text project-text">GifTastic is a single page app use to search gifs by keyword. 
+                                    The user can set the number of results to return. The gifs can be played and
+                                    stopped.
+                                </p>
+                                <p class="project-tech"><strong>Technologies:</strong> Node.js, React, Redux, CSS3, Materialize UI</p>
+                            </div>
                         </div>
-                        <div class="portfolio-description">
-                            <div class="projectTitle">
-                                <h4 class="projectName">
-                                    <a href="assets/images/trivia.png">MN Trivia</a>
-                                </h4>
-                                <a href="https://github.com/emerzonic/TriviaGame" class="portfolio-gallery-set">
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://emerzonic.github.io/TriviaGame/">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card image-card bg-dark text-center">
+                            <img src="assets/images/gif.png" class="card-img project-image" alt="project image">
+                            <div class="card-img-overlay">
+                                <a target="_blank" rel="noopener noreferrer" href="https://react-giftastic.herokuapp.com/"
+                                    class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/emerzonic/GifTastic-React_Redux_RX-js"
+                                    class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="project">
-                        <div class="item-thumbnail">
-                            <img class="projectImage img-fluid" src="assets/images/gif.png" alt="">
+                <div class="project-div">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <h4 class="card-title project-title">Bamazon <i class="far fa-hand-point-right"></i></h4>
+                                <h5 class="card-text project-description">Console Application</h5>
+                                <p class="card-text project-text">Bamazon is an Amazon-like storefront application. The app has 
+                                    four(4) user Views: Customer, Manager, Supervisor and Admin. Customer can view products and make 
+                                    purchases Manager can view all products on sales, view low inventory, replenish inventory 
+                                    and add new product. Supervisor can view sales by department and create new departments. 
+                                    Admin can seed the database.
+                                </p>
+                                <p class="project-tech"><strong>Technologies: </strong>Node.js, MySQL</p>
+                            </div>
                         </div>
-                        <div class="portfolio-description">
-                            <div class="projectTitle">
-                                <h4 class="projectName">
-                                    <a href="assets/images/gif.png">GifTastic</a>
-                                </h4>
-                                <a href="https://github.com/emerzonic/GifTastic-React_Redux_RX-js" class="portfolio-gallery-set">
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://react-giftastic.herokuapp.com/">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card image-card bg-dark text-center">
+                            <img src="assets/images/bamazon.png" class="card-img project-image" alt="project image">
+                            <div class="card-img-overlay">
+                                <a target="_blank" rel="noopener noreferrer" href="https://emerzonic.github.io/bamazon/"
+                                    class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/emerzonic/bamazon"
+                                    class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="project">
-                        <div class="item-thumbnail">
-                            <img class="projectImage img-fluid" src="assets/images/bamazon.png" alt="">
-                        </div>
-                        <div class="portfolio-description">
-                            <div class="projectTitle">
-                                <h4 class="projectName">
-                                    <a href="assets/images/bamazon.png">Bamazon</a>
-                                </h4>
-                                <a href="https://github.com/emerzonic/bamazon" class="portfolio-gallery-set">
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://emerzonic.github.io/bamazon/">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
+                <div class="project-div">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                    <h4 class="card-title project-title"><i class="far fa-hand-point-left"></i> Train Scheduler</h4>
+                                    <h5 class="card-text project-description">Single Page Application</h5>
+                                    <p class="card-text project-text">Train Scheduler is a train dashboard app that provides real time information
+                                        about train arrival time. 
+                                    </p>
+                                    <p class="project-tech"><strong>Technologies: </strong>JavaScript, JQuery, Firebase Realtime Database, Moment.js</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="project">
-                        <div class="item-thumbnail">
-                            <img class="projectImage img-fluid" src="assets/images/train.png" alt="">
-                        </div>
-                        <div class="portfolio-description">
-                            <div class="projectTitle">
-                                <h4 class="projectName">
-                                    <a href="assets/images/train.png">Train Scheduler</a>
-                                </h4>
-                                <a href="https://github.com/emerzonic/Train-Scheduler" class="portfolio-gallery-set">
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://emerzonic.github.io/Train-Scheduler/">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="project">
-                        <div class="item-thumbnail">
-                            <img class="projectImage img-fluid" src="assets/images/rbg.png" alt="">
-                        </div>
-                        <div class="portfolio-description">
-                            <div class="projectTitle">
-                                <h4 class="projectName">
-                                    <a href="assets/images/rbg.png">RBG Color Game</a>
-                                </h4>
-                                <a href="https://github.com/emerzonic/RBG-Color-Game-App" class="portfolio-gallery-set">
-                                    <i class="fa fa-code" aria-hidden="true"></i>
-                                </a>
-                                <a target="_blank" rel="noopener noreferrer" href="https://emerzonic.github.io/RBG-Color-Game-App/">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="card image-card bg-dark text-center">
+                            <img src="assets/images/train.png" class="card-img project-image" alt="project image">
+                            <div class="card-img-overlay">
+                                <a target="_blank" rel="noopener noreferrer" href="https://emerzonic.github.io/Train-Scheduler/"
+                                    class="btn btn-outline-primary site-link">Website <i class="fas fa-external-link-alt"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/emerzonic/Train-Scheduler"
+                                    class="btn btn-outline-primary site-link">GitHub <i class="fas fa-code"></i></a>
                             </div>
                         </div>
                     </div>
@@ -574,6 +647,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+    <script src="assets/javascript/assets.js"></script>
     <script src="assets/javascript/app.js"></script>
     <script src="assets/javascript/messager.js"></script>
 </body>

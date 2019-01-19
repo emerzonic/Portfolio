@@ -12,11 +12,13 @@ $(document).ready(function () {
   }
 
 
+
   // Add scrollspy to page body
   $('body').scrollspy({
     target: ".navbar",
     offset: 74
   });
+
 
 
   //controls the page scroll when the nav link is clicked
@@ -62,7 +64,7 @@ $(document).ready(function () {
       aboutPosition   = 360,
       socialPosition  = 730,
       skillPosition   = 1250,
-      skillDivPosition= 1255,
+      skillDivPosition= 1250,
       projectPosition = 1575,
       contactPosition = 2909;
 
@@ -80,7 +82,8 @@ $(document).ready(function () {
     if ($(document).scrollTop() > pagePosition) {
       element.removeClass('hide-element')
         .addClass('show-element');;
-    } else {
+    }
+     else {
       element.addClass('hide-element')
         .removeClass('show-element');
     }
