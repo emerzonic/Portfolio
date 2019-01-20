@@ -51,12 +51,11 @@ $(document).ready(function () {
 
 
   //Select and  animate
-  $(window).scroll(function () {
+  $(document).scroll(function () {
     //select the elements to animate
     var aboutTitle = $('.aboutMe'),
       socialTitle  = $('.social-div'),
       skillTitle   = $('.mySkills'),
-      skillsDiv    = $('.skills-content'),
       projectTitle = $('.myProjects'),
       contactTitle = $('.myContact'),
 
@@ -64,14 +63,11 @@ $(document).ready(function () {
       aboutPosition   = 360,
       socialPosition  = 730,
       skillPosition   = 1250,
-      skillDivPosition= 1250,
       projectPosition = 1575,
-      contactPosition = 2909;
-
+      contactPosition = 5888;
     animate(aboutTitle, aboutPosition);
     animate(socialTitle, socialPosition);
     animate(skillTitle, skillPosition);
-    animate(skillsDiv, skillDivPosition);
     animate(projectTitle, projectPosition);
     animate(contactTitle, contactPosition);
   });
@@ -80,12 +76,7 @@ $(document).ready(function () {
   //controls animation base on page scroll position
   function animate(element, pagePosition) {
     if ($(document).scrollTop() > pagePosition) {
-      element.removeClass('hide-element')
-        .addClass('show-element');;
-    }
-     else {
-      element.addClass('hide-element')
-        .removeClass('show-element');
+      element.addClass('show-element');
     }
   }
 
@@ -99,4 +90,14 @@ $(document).ready(function () {
   });
 
 
+  $(document).on('scroll', function() {
+    $('.project-div').each(function(){
+      if($(document).scrollTop() >= $(this).position().top - 650){
+        $(this).find('.image-card').css('margin','0rem');
+    }
+    })
+})
+
+
+// END 
 })

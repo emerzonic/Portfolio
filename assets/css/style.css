@@ -76,12 +76,12 @@ body {
 .polygon {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 13%, 0 58%);
     clip-path: polygon(0 0, 100% 0, 100% 13%, 0 58%);
-    height: 13%;
+    height: 13.5%;
     width: 100%;
     margin: 0;
     padding: 0;
     position: absolute;
-    background: #05a4d434;
+    background: #62dafb4b;
 }
 
 @media(max-width:750px) {
@@ -168,7 +168,10 @@ body {
 }
 
 .nameContent {
-    padding-top: 140px;
+    padding-top: 9rem;
+    -webkit-animation: paddingAnimate 3s;
+    /* Safari 4.0 - 8.0 */
+    animation: paddingAnimate 3s;
 }
 
 .nameContent .btn:hover {
@@ -176,40 +179,38 @@ body {
     background: transparent;
     color: var(--main-theme-color, #05a4d4);
     margin-top: 2rem;
+    
 }
 
 .name {
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    -webkit-animation: marginAnimate 3s;
-    /* Safari 4.0 - 8.0 */
-    animation: marginAnimate 3s;
     font-family: 'Righteous', cursive;
 }
 
 /* Chrome, Safari, Opera */
 
-@-webkit-keyframes marginAnimate {
+@-webkit-keyframes paddingAnimate {
     from {
-        margin-top: 110px;
-        opacity: 0;
+        padding-top: 15rem;
+        opacity: 9rem;
     }
     to {
-        margin-top: 0;
+        padding-top: 0;
         opacity: 1;
     }
 }
 
 /* Standard syntax */
 
-@keyframes marginAnimate {
+@keyframes paddingAnimate {
     from {
-        margin-top: 110px;
+        padding-top: 15rem;
         opacity: 0;
     }
     to {
-        margin-top: 0;
+        padding-top: 9 rem;
         opacity: 1;
     }
 }
@@ -221,14 +222,14 @@ body {
     margin-top: 0.5rem;
     transition: all 0.7s ease;
     font-weight: bolder;
-    -webkit-animation: mymove 0.5s infinite;
+    -webkit-animation: btn-animate 0.5s infinite;
     /* Chrome, Safari, Opera */
-    animation: mymove 0.5s infinite;
+    animation: btn-animate 0.5s infinite;
 }
 
 /* Chrome, Safari, Opera */
 
-@-webkit-keyframes mymove {
+@-webkit-keyframes btn-animate {
     50% {
         margin-top: 50px;
     }
@@ -236,7 +237,7 @@ body {
 
 /* Standard syntax */
 
-@keyframes mymove {
+@keyframes btn-animate {
     50% {
         margin-top: 50px;
     }
@@ -262,18 +263,10 @@ body {
     transition: 0.3s linear;
     overflow: hidden;
     height: 4rem;
-}
-
-.skills-content {
-    transition: 0.3s linear;
-    overflow: hidden;
-    height: 15rem;
-}
-
-.hide-element {
     width: 0;
     opacity: 0;
 }
+
 
 .show-element {
     width: 100%;
@@ -355,6 +348,7 @@ p {
 
 .project-div {
     margin: 1.5rem 0;
+  
 }
 
 .project-div .card {
@@ -417,7 +411,14 @@ p {
 .project-div .image-card {
     -webkit-box-shadow:0 .125rem .25rem rgba(0,0,0,.075); 
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    /* margin: 0 4rem; */
+    transition: 0.3s linear;
+    transition: 0.5s ease-in;
+    transition: 0.5s ease-out;
 } 
+
+
+
 
 .project-div:hover .project-image {
     opacity: 0.1;
@@ -472,6 +473,13 @@ p {
     .project-div:nth-child(2n) {
         -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
+    }
+
+    .project-div:nth-child(even)  .image-card  {
+        margin-right:4rem;
+    }
+    .project-div:nth-child(odd)  .image-card {
+        margin-left:4rem;
     }
 }
 
