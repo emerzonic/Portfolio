@@ -1,6 +1,5 @@
 $(document).ready(function () {
   //add polygon if browser support it
-  debugger
   if (browserIsSupported()) {
     $('#bg-home').addClass('polygon');
   }
@@ -21,12 +20,10 @@ $(document).ready(function () {
   });
 
   $(window).scroll(function () {
-    if ($(document).scrollTop() > 500) {
+    if (pagePassedNavbarPosition()) {
       makeBackgroundDark();
     } else {
-      if (!toggleButtonIsExpended()) {
-        makeBackgroundLight();
-      }
+      checkToggleButton();
     }
   });
 
@@ -35,20 +32,15 @@ $(document).ready(function () {
   });
 
   $('#toggle').click(function () {
-    if ($(this).attr('aria-expanded') === 'false') {
-      $('.navbar').addClass('bg-dark');
-    } else {
+    if (toggleButtonIsExpended()) {
       $('.navbar').removeClass('bg-dark');
+    } else {
+      $('.navbar').addClass('bg-dark');
     }
   });
 
-
   $(document).on('scroll', function () {
-    $('.project-div').each(function () {
-      if ($(document).scrollTop() >= $(this).position().top - 650) {
-        $(this).find('.image-card').css('margin', '0rem');
-      }
-    })
+    animateProjectImages();
   })
 });
 
@@ -57,12 +49,18 @@ function browserIsSupported() {
   return (agent.includes("Chrome") || agent.includes("Safari") || agent.includes("Firefox"));
 }
 
+function getUserAgent() {
+  return window.navigator.userAgent;
+ }
+
+ function browerIsMicrosoft() {
+  const agent = getUserAgent();
+  return agent.includes("MSIE") || agent.includes('Edge');
+}
+
 function addIESpecificClasses() {
   $('.logo, .skill-heading').addClass('IE-background');
   $('.skillsGroup').addClass('IE-border-left');
-}
-function getUserAgent() {
- return window.navigator.userAgent;
 }
 
 function scrollToPosition(event) {
@@ -75,9 +73,9 @@ function scrollToPosition(event) {
   });
 }
 
-function browerIsMicrosoft() {
-  const agent = getUserAgent();
-  return agent.includes("MSIE") || agent.includes('Edge');
+function pagePassedNavbarPosition() {
+  const pageDistanceFromTop = 500;
+  return $(document).scrollTop() > pageDistanceFromTop;
 }
 
 function makeBackgroundDark() {
@@ -85,8 +83,14 @@ function makeBackgroundDark() {
   $('.fixed-top').css('padding-top', '0.5rem');
 }
 
+function checkToggleButton() {
+  if (!toggleButtonIsExpended()) {
+    makeBackgroundLight();
+  }
+}
+
 function toggleButtonIsExpended() {
-  return $('#toggle').attr('aria-expanded');
+  return $('#toggle').attr('aria-expanded') === 'true';
 }
 
 function makeBackgroundLight() {
@@ -120,12 +124,33 @@ function getPagePositionMapping() {
   };
  }
 
-function animate(element, pagePosition) {
+ function animate(element, pagePosition) {
   if (pageIsAtCurrentPosition(pagePosition)) {
     element.addClass('show-element');
   }
 }
 
-function pageIsAtCurrentPosition(pagePosition) {
-  return $(document).scrollTop() > pagePosition;
+function animateProjectImages() {
+  $('.project-div').each(function () {
+    if (scrollingIsAtCurrentImage($(this))) {
+      $(this).find('.image-card').css('margin', '0rem');
+    }
+  });
 }
+
+function scrollingIsAtCurrentImage(projectElement) {
+  const pageTop = getDocumentScrollTop();
+  const currentPositionFromTop = projectElement.position().top
+  const offset = 650;
+  return (pageTop >= (currentPositionFromTop - offset));
+}
+
+function getDocumentScrollTop() {
+  return $(document).scrollTop();
+}
+
+function pageIsAtCurrentPosition(pagePosition) {
+  const pageTop = getDocumentScrollTop();
+  return pageTop > pagePosition;
+}
+
