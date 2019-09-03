@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  //add polygon if browser support it
   if (browserIsSupported()) {
     $('#bg-home').addClass('polygon');
   }
