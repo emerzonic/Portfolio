@@ -20,17 +20,21 @@ function allFieldsAreCompleted({name, email, message}){
     return (name.length > 0 && email.length > 0 && message.length > 0);
 }
 
-function processFormSubmission({ name, email, message }) {
+function processFormSubmission(formValues) {
     handleFormSuccessFeedbackDisplay();
     emptyInputFields();
+    const contactMessage = buildContactMessage(formValues);
+    saveContactMessage(contactMessage);
+}
+
+function buildContactMessage({name, email, message}) {
     const timeStamp = moment().format('LLLL');
-    const contactMessage = {
+    return {
         senderName: name,
         senderEmail: email,
         SenderMessage: message,
         timeStamp: timeStamp
     };
-    saveContactMessage(contactMessage);
 }
 
 function handleFormSuccessFeedbackDisplay() {
@@ -52,11 +56,11 @@ function handleFormErrorFeedbackDisplay() {
 }
 
 function saveContactMessage(contactMessage) {
-    const database = initialDatabase();
+    const database = getDatabaseInstance();
     database.ref().push(contactMessage);
 }
 
-function initialDatabase() {
+function getDatabaseInstance() {
     const config = {
         apiKey: "AIzaSyCFwcRWfD4IFZP2xwllDBtZupuL1C94kWc",
         authDomain: "messagetracker-fdcb7.firebaseapp.com",
@@ -66,8 +70,7 @@ function initialDatabase() {
         messagingSenderId: "752908261736"
     };
     firebase.initializeApp(config);
-    const database = firebase.database();
-    return database;
+    return firebase.database();
 }
 
 
